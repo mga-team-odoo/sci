@@ -23,7 +23,10 @@
         "base",
         "account",
     ],
-    "data": [],
+    "data": [
+        "views/company_view.xml",
+        "views/partner_view.xml",
+    ],
     "demo": [],
     "qweb": []
 }
