@@ -29,6 +29,7 @@
     "data": [
         "views/company_view.xml",
         "views/partner_view.xml",
+        "views/account_view.xml",
     ],
     "demo": [],
     "qweb": []

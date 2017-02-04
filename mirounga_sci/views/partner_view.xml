@@ -5,6 +5,11 @@
 <openerp>
     <data>
 
+        <menuitem id="menu_general" 
+            parent="menu_sci"
+            sequence="20"
+            name="General"/>
+
         <menuitem id="menu_general_customer" 
             parent="menu_general"
             sequence="20"
