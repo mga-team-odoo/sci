@@ -30,6 +30,7 @@
         "views/company_view.xml",
         "views/partner_view.xml",
         "views/account_view.xml",
+        "views/report_receipt.xml",
     ],
     "demo": [],
     "qweb": []
