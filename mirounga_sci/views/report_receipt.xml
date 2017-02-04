@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2016-2017 Christophe CHAUVET
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<openerp>
+    <data>
+
+        <report
+            id="account_receipt"
+            model="account.voucher"
+            string="Receipt"
+            report_type="qweb-pdf"
+            name="mirounga_sci.report_receipt"
+            file="mirounga_sci.report_receipt"
+            />
+
+        <template id="report_receipt_document">
+            <t t-call="report.external_layout">
+                <div class="page">
+                    <div class="row">
+                        <div class="col-xs-5 col-xs-offset-7">
+                            <address t-field="o.partner_id"
+                                t-field-options='{"widget": "contact", "fields": ["address", "name"], "no_marker": true}' />
+                            <span t-if="o.partner_id.vat">TIN: <span t-field="o.partner_id.vat"/></span>
+                        </div>
+                    </div>
+                    <h2>
+                        <span t-if="(o.state == 'posted' or o.state == 'proforma')">Receipt</span>
+                        <span t-if="o.state == 'draft'">Draft Receipt</span>
+                        <span t-if="o.state == 'cancel'">Cancelled Receipt</span>
+                        <span t-field="o.number"/>
+                    </h2>
+
+                    <div class="row mt32 mb32">
+                        <div class="col-xs-2" t-if="o.reference">
+                            <strong>Reference:</strong>
+                            <p t-field="o.reference"/>
+                        </div>
+                        <div class="col-xs-2" t-if="o.date">
+                            <strong>Invoice Date:</strong>
+                            <p t-field="o.date"/>
+                        </div>
+                        <div class="col-xs-2" t-if="o.account_id.code">
+                            <strong>Compte:</strong>
+                            <p t-field="o.account_id.code"/>
+                        </div>
+                        <div class="col-xs-2" t-if="o.partner_id.ref">
+                            <strong>Customer Code:</strong>
+                            <p t-field="o.partner_id.ref"/>
+                        </div>
+                        <div class="col-xs-2" t-if="o.name">
+                            <strong>Memo:</strong>
+                            <p t-field="o.name"/>
+                        </div>
+                    </div>
+
+
+                    <table class="table table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Description</th>
+                                <th class="text-right">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody class="invoice_tbody">
+                            <tr t-foreach="o.line_cr_ids" t-as="l">
+                                <td><span t-field="l.name"/></td>
+                                <td class="text-right">
+                                    <span t-field="l.amount"
+                                        t-field-options='{"widget": "monetary", "display_currency": "o.currency_id"}'/>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <t t-set="amount_wtax" t-value="o.amount - o.tax_amount"/>
+                    <div class="row">
+                        <div class="col-xs-4 pull-right">
+                            <table class="table table-condensed">
+                                <tr class="border-black">
+                                    <td><strong>Total Without Taxes</strong></td>
+                                    <td class="text-right">
+                                        <span t-esc="amount_wtax" t-field-options='{"widget": "monetary", "display_currency": "o.currency_id"}'/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Taxes</td>
+                                    <td class="text-right">
+                                        <span t-field="o.tax_amount" t-field-options='{"widget": "monetary", "display_currency": "o.currency_id"}'/>
+                                    </td>
+                                </tr>
+                                <tr class="border-black">
+                                    <td><strong>Total</strong></td>
+                                    <td class="text-right">
+                                        <span t-field="o.amount" t-field-options='{"widget": "monetary", "display_currency": "o.currency_id"}'/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+
+                </div>
+            </t>
+        </template>
+
+        <template id="report_receipt">
+            <t t-call="report.html_container">
+                <t t-foreach="doc_ids" t-as="doc_id">
+                    <t t-raw="translate_doc(doc_id, doc_model, 'partner_id.lang', 'mirounga_sci.report_receipt_document')"/>
+                </t>
+            </t>
+        </template>
+
+    </data>
+</openerp>
+
