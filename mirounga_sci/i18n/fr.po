@@ -1,19 +1,21 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-#	* mirounga_sci
-#
+# * mirounga_sci
+# Christophe CHAUVET <christophe.chauvet@gmail.com>, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-04 17:49+0000\n"
-"PO-Revision-Date: 2017-02-04 17:49+0000\n"
-"Last-Translator: <>\n"
-"Language-Team: \n"
+"POT-Creation-Date: 2017-02-04 20:36+0000\n"
+"PO-Revision-Date: 2017-02-04 21:39+0200\n"
+"Last-Translator: Christophe CHAUVET <christophe.chauvet@gmail.com>\n"
+"Language-Team: Mirounga\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
 
 #. module: mirounga_sci
 #: model:ir.ui.menu,name:mirounga_sci.menu_accounting
@@ -21,19 +23,66 @@ msgid "Accounting"
 msgstr "Comptabilité"
 
 #. module: mirounga_sci
+#: view:website:mirounga_sci.report_receipt_document
+msgid "Amount"
+msgstr "Montant"
+
+#. module: mirounga_sci
+#: view:website:mirounga_sci.report_receipt_document
+msgid "Cancelled Receipt"
+msgstr "Quittance annulée"
+
+#. module: mirounga_sci
+#: view:website:mirounga_sci.report_receipt_document
+msgid "Compte:"
+msgstr "Compte:"
+
+#. module: mirounga_sci
+#: view:website:mirounga_sci.report_receipt_document
+msgid "Customer Code:"
+msgstr "Code Client:"
+
+#. module: mirounga_sci
 #: model:ir.ui.menu,name:mirounga_sci.menu_general_customer
 msgid "Customers"
 msgstr "Clients"
 
 #. module: mirounga_sci
-#: model:ir.ui.menu,name:mirounga_sci.menu_general
-msgid "General"
-msgstr "General"
+#: view:website:mirounga_sci.report_receipt_document
+msgid "Description"
+msgstr "Descriptif"
 
 #. module: mirounga_sci
+#: view:website:mirounga_sci.report_receipt_document
+msgid "Draft Receipt"
+msgstr "Quittance en brouillon"
+
+#. module: mirounga_sci
+#: model:ir.ui.menu,name:mirounga_sci.menu_general
+msgid "General"
+msgstr "Général"
+
+#. module: mirounga_sci
+#: view:website:mirounga_sci.report_receipt_document
+msgid "Invoice Date:"
+msgstr "Date de quittance"
+
+#. module: mirounga_sci
+#: view:website:mirounga_sci.report_receipt_document
+msgid "Memo:"
+msgstr "Mémo:"
+
+#. module: mirounga_sci
+#: model:ir.actions.report.xml,name:mirounga_sci.account_receipt
 #: model:ir.ui.menu,name:mirounga_sci.menu_accounting_receipt
+#: view:website:mirounga_sci.report_receipt_document
 msgid "Receipt"
 msgstr "Quittance"
+
+#. module: mirounga_sci
+#: view:website:mirounga_sci.report_receipt_document
+msgid "Reference:"
+msgstr "Référence:"
 
 #. module: mirounga_sci
 #: model:ir.ui.menu,name:mirounga_sci.menu_sci
@@ -45,3 +94,22 @@ msgstr "SCI"
 msgid "Suppliers"
 msgstr "Fournisseurs"
 
+#. module: mirounga_sci
+#: view:website:mirounga_sci.report_receipt_document
+msgid "TIN:"
+msgstr "TVA:"
+
+#. module: mirounga_sci
+#: view:website:mirounga_sci.report_receipt_document
+msgid "Taxes"
+msgstr "Taxes"
+
+#. module: mirounga_sci
+#: view:website:mirounga_sci.report_receipt_document
+msgid "Total"
+msgstr "Total"
+
+#. module: mirounga_sci
+#: view:website:mirounga_sci.report_receipt_document
+msgid "Total Without Taxes"
+msgstr "Total HT"
