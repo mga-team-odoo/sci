@@ -1,0 +1,47 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* mirounga_sci
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-02-04 17:49+0000\n"
+"PO-Revision-Date: 2017-02-04 17:49+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mirounga_sci
+#: model:ir.ui.menu,name:mirounga_sci.menu_accounting
+msgid "Accounting"
+msgstr "Comptabilité"
+
+#. module: mirounga_sci
+#: model:ir.ui.menu,name:mirounga_sci.menu_general_customer
+msgid "Customers"
+msgstr "Clients"
+
+#. module: mirounga_sci
+#: model:ir.ui.menu,name:mirounga_sci.menu_general
+msgid "General"
+msgstr "General"
+
+#. module: mirounga_sci
+#: model:ir.ui.menu,name:mirounga_sci.menu_accounting_receipt
+msgid "Receipt"
+msgstr "Quittance"
+
+#. module: mirounga_sci
+#: model:ir.ui.menu,name:mirounga_sci.menu_sci
+msgid "SCI"
+msgstr "SCI"
+
+#. module: mirounga_sci
+#: model:ir.ui.menu,name:mirounga_sci.menu_general_supplier
+msgid "Suppliers"
+msgstr "Fournisseurs"
+
