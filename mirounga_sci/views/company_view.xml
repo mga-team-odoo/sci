@@ -9,10 +9,5 @@
             sequence="20"
             name="SCI"/>
 
-        <menuitem id="menu_general" 
-            parent="menu_sci"
-            sequence="20"
-            name="General"/>
-
     </data>
 </openerp>
