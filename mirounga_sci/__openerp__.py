@@ -22,6 +22,9 @@
     "depends": [
         "base",
         "account",
+        "account_voucher",
+        "account_accountant",
+        "account_followup",
     ],
     "data": [
         "views/company_view.xml",
