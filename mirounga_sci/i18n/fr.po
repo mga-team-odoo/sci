@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-05 08:15+0000\n"
-"PO-Revision-Date: 2017-02-05 09:16+0200\n"
+"POT-Creation-Date: 2017-02-05 08:39+0000\n"
+"PO-Revision-Date: 2017-02-05 09:39+0200\n"
 "Last-Translator: Christophe CHAUVET <christophe.chauvet@gmail.com>\n"
 "Language-Team: Mirounga\n"
 "Language: fr\n"
@@ -48,7 +48,7 @@ msgid "Customer payment"
 msgstr "Paiement client"
 
 #. module: mirounga_sci
-#: model:ir.ui.menu,name:mirounga_sci.menu_general_customer
+#: model:ir.ui.menu,name:mirounga_sci.menu_accounting_customer
 msgid "Customers"
 msgstr "Clients"
 
@@ -61,11 +61,6 @@ msgstr "Descriptif"
 #: view:website:mirounga_sci.report_receipt_document
 msgid "Draft Receipt"
 msgstr "Quittance en brouillon"
-
-#. module: mirounga_sci
-#: model:ir.ui.menu,name:mirounga_sci.menu_general
-msgid "General"
-msgstr "Général"
 
 #. module: mirounga_sci
 #: view:website:mirounga_sci.report_receipt_document
@@ -95,7 +90,12 @@ msgid "SCI"
 msgstr "SCI"
 
 #. module: mirounga_sci
-#: model:ir.ui.menu,name:mirounga_sci.menu_general_supplier
+#: model:ir.ui.menu,name:mirounga_sci.menu_accounting_supp
+msgid "Supplier Accounting"
+msgstr "Comptabilité fournisseur"
+
+#. module: mirounga_sci
+#: model:ir.ui.menu,name:mirounga_sci.menu_accounting_supplier
 msgid "Suppliers"
 msgstr "Fournisseurs"
 
@@ -118,6 +118,9 @@ msgstr "Total"
 #: view:website:mirounga_sci.report_receipt_document
 msgid "Total Without Taxes"
 msgstr "Total HT"
+
+#~ msgid "General"
+#~ msgstr "Général"
 
 #~ msgid "Accounting"
 #~ msgstr "Comptabilité"
