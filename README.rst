@@ -2,6 +2,9 @@
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
 
+.. image:: https://travis-ci.org/mga-team-odoo/sci.svg?branch=8.0
+   :target: https://travis-ci.org/mga-team-odoo/sci
+
 ==========================
 Société Civile Immobilière
 ==========================
@@ -33,7 +36,7 @@ Anomalies
 =========
 
 Les anomalies seront suivis sur `GitHub 
-<https://github.com/OCA/{project_repo}/issues>`_. Avant de créer un nouveau ticket, veuillez
+<https://github.com/mga-team-odoo/sci/issues>`_. Avant de créer un nouveau ticket, veuillez
 vérifier qu'un incident n'a pas été reporté. Si celà n'est pas le cas, merci de détailler vos actions
 pour le reproduire.
 
