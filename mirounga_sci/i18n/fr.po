@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-05 08:39+0000\n"
-"PO-Revision-Date: 2017-02-05 09:39+0200\n"
+"POT-Creation-Date: 2017-02-05 09:57+0000\n"
+"PO-Revision-Date: 2017-02-05 10:58+0200\n"
 "Last-Translator: Christophe CHAUVET <christophe.chauvet@gmail.com>\n"
 "Language-Team: Mirounga\n"
 "Language: fr\n"
@@ -28,9 +28,19 @@ msgid "Cancelled Receipt"
 msgstr "Quittance annulée"
 
 #. module: mirounga_sci
+#: model:ir.ui.menu,name:mirounga_sci.menu_scicfg_cny
+msgid "Company"
+msgstr "Société"
+
+#. module: mirounga_sci
 #: view:website:mirounga_sci.report_receipt_document
 msgid "Compte:"
 msgstr "Compte:"
+
+#. module: mirounga_sci
+#: model:ir.ui.menu,name:mirounga_sci.menu_sci_config
+msgid "Configuration"
+msgstr "Configuration"
 
 #. module: mirounga_sci
 #: model:ir.ui.menu,name:mirounga_sci.menu_accounting_cust
@@ -73,6 +83,12 @@ msgid "Memo:"
 msgstr "Mémo:"
 
 #. module: mirounga_sci
+#: model:ir.actions.act_window,name:mirounga_sci.product_template_act
+#: model:ir.ui.menu,name:mirounga_sci.menu_scicfg_product
+msgid "Products"
+msgstr "Produits/Prestation"
+
+#. module: mirounga_sci
 #: model:ir.actions.report.xml,name:mirounga_sci.account_receipt
 #: model:ir.ui.menu,name:mirounga_sci.menu_accounting_receipt
 #: view:website:mirounga_sci.report_receipt_document
@@ -98,6 +114,16 @@ msgstr "Comptabilité fournisseur"
 #: model:ir.ui.menu,name:mirounga_sci.menu_accounting_supplier
 msgid "Suppliers"
 msgstr "Fournisseurs"
+
+#. module: mirounga_sci
+#: model:ir.ui.menu,name:mirounga_sci.menu_accounting_invsupp
+msgid "Suppliers invoice"
+msgstr "Facture fournisseur"
+
+#. module: mirounga_sci
+#: model:ir.ui.menu,name:mirounga_sci.menu_accounting_supppayment
+msgid "Suppliers payment"
+msgstr "Paimeent fournisseur"
 
 #. module: mirounga_sci
 #: view:website:mirounga_sci.report_receipt_document
