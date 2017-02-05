@@ -38,6 +38,18 @@
             sequence="30"
             name="Supplier Accounting"/>
 
+        <menuitem id="menu_accounting_invsupp" 
+            parent="menu_accounting_supp"
+            sequence="10"
+            name="Suppliers invoice"
+            action="account.action_invoice_tree2"/>
+
+        <menuitem id="menu_accounting_supppayment" 
+            parent="menu_accounting_supp"
+            sequence="20"
+            name="Suppliers payment"
+            action="account_voucher.action_vendor_payment"/>
+
         <menuitem id="menu_accounting_supplier" 
             parent="menu_accounting_supp"
             sequence="99"
