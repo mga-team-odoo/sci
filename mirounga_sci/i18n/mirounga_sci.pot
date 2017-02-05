@@ -6,19 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-04 20:36+0000\n"
-"PO-Revision-Date: 2017-02-04 20:36+0000\n"
+"POT-Creation-Date: 2017-02-05 08:15+0000\n"
+"PO-Revision-Date: 2017-02-05 08:15+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
-
-#. module: mirounga_sci
-#: model:ir.ui.menu,name:mirounga_sci.menu_accounting
-msgid "Accounting"
-msgstr ""
 
 #. module: mirounga_sci
 #: view:website:mirounga_sci.report_receipt_document
@@ -36,8 +31,18 @@ msgid "Compte:"
 msgstr ""
 
 #. module: mirounga_sci
+#: model:ir.ui.menu,name:mirounga_sci.menu_accounting_cust
+msgid "Customer Accounting"
+msgstr ""
+
+#. module: mirounga_sci
 #: view:website:mirounga_sci.report_receipt_document
 msgid "Customer Code:"
+msgstr ""
+
+#. module: mirounga_sci
+#: model:ir.ui.menu,name:mirounga_sci.menu_accounting_custpayment
+msgid "Customer payment"
 msgstr ""
 
 #. module: mirounga_sci
