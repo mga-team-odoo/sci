@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright 2016-2017 Christophe CHAUVET
      License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
-
 <openerp>
     <data>
 
-        <menuitem id="menu_accounting" 
+        <menuitem id="menu_accounting_cust" 
             parent="menu_sci"
             sequence="30"
-            name="Accounting"/>
+            name="Customer Accounting"/>
 
         <menuitem id="menu_accounting_receipt" 
-            parent="menu_accounting"
+            parent="menu_accounting_cust"
             sequence="20"
             name="Receipt"
             action="account_voucher.action_sale_receipt"/>
+
+        <menuitem id="menu_accounting_custpayment" 
+            parent="menu_accounting_cust"
+            sequence="20"
+            name="Customer payment"
+            action="account_voucher.action_vendor_receipt"/>
 
     </data>
 </openerp>
